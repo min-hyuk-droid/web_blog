@@ -220,3 +220,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 업로드된 게시글 이미지 (default_error.png, pig.png 외)
+media/images/*/
