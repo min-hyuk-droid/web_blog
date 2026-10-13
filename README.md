@@ -7,8 +7,8 @@ by kiokahn@khu.ac.kr
 
 예비 코드([kiokahn/web_blog](https://github.com/kiokahn/web_blog)) 위에 실습 전체를 진행했습니다.
 
-- 배포 URL (PythonAnywhere): DEPLOY_URL
-- API Root: DEPLOY_URL/api_root/
+- 배포 URL (PythonAnywhere): https://minhyuk.pythonanywhere.com
+- API Root: https://minhyuk.pythonanywhere.com/api_root/
 
 ### 이미지 블로그
 - `blog/models.py` 의 `image` 필드 변경분 마이그레이션 추가 (`0004_alter_post_image.py`)
@@ -30,7 +30,7 @@ cd test_api
 cp .env.example .env            # BLOG_USERNAME / BLOG_PASSWORD 입력
 ./curl_test.sh                  # curl: ID/비밀번호 → 토큰 발급 → 토큰으로 게시글 작성
 python test_api.py              # Python requests: 토큰 발급 → 이미지 포함 게시글 작성
-python test_api.py DEPLOY_URL   # 배포 서버 대상
+python test_api.py https://minhyuk.pythonanywhere.com   # 배포 서버 대상
 ```
 
 ---
